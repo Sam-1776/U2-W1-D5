@@ -12,19 +12,21 @@ body {
   margin-inline: auto;
   display: flex;
 }
-.logo{
-    cursor: pointer;
+.logo {
+  cursor: pointer;
 }
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
-.box{
-    cursor: pointer;
+.box {
+  cursor: pointer;
 }
-li{
-    cursor: pointer;
+li {
+  cursor: pointer;
 }
-.new{cursor: pointer;}
+.new {
+  cursor: pointer;
+}
 
 /* HEADER */
 header {
@@ -39,8 +41,8 @@ header {
   z-index: 99;
   transition: background-color 500ms 250ms;
 }
-.change-color{
-    background-color: white;
+.change-color {
+  background-color: white;
 }
 header > .container > nav > div > ul > li {
   display: inline-block;
@@ -50,15 +52,15 @@ header > .container > nav > div > ul > li {
 .color {
   background-color: #191919;
   color: white;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 50px;
   font-size: 0.9rem;
   display: inline-block;
   border: none;
   transition: background-color 500ms 250ms;
 }
-.change-colorB{
-    background-color: #1a8917;
+.change-colorB {
+  background-color: #1a8917;
 }
 
 header > .container {
@@ -132,6 +134,7 @@ article > .container {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  row-gap: 10px;
 }
 .trending {
   width: 90%;
@@ -197,10 +200,10 @@ span {
   width: 16px;
   height: 16px;
 }
-.lastW{
-    display: inline-block;
+.lastW {
+  display: inline-block;
   background-color: #f2f2f2;
-  padding: 0.4rem .9rem;
+  padding: 0.4rem 0.9rem;
   border-radius: 50px;
 }
 
@@ -250,8 +253,8 @@ aside > .container {
   align-items: center;
   column-gap: 5px;
 }
-.people > .profile > img{
-    width: 100%;
+.people > .profile > img {
+  width: 100%;
 }
 .content {
   display: flex;
@@ -309,8 +312,8 @@ h5 {
   gap: 10px;
 }
 .topic > ul > a {
-    text-decoration: none;
-    color:#191919;
+  text-decoration: none;
+  color: #191919;
 }
 .topic > ul > a > li {
   display: inline-block;
@@ -334,13 +337,12 @@ h5 {
   flex-wrap: wrap;
   gap: 20px;
 }
-.more > ul > a{
-    text-decoration: none;
-    color: #191919;
+.more > ul > a {
+  text-decoration: none;
+  color: #191919;
 }
-.more > ul > a >li {
+.more > ul > a > li {
   display: inline-block;
   font-size: 0.9rem;
   font-weight: 500;
 }
-

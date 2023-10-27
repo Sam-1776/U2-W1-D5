@@ -322,11 +322,12 @@ h5 {
   text-decoration: none;
   color: #1a8917;
   font-size: 0.8rem;
+  margin-bottom: 30px;
 }
 .more {
   margin-top: 30px;
   position: sticky;
-  top: 370px;
+  top: 400px;
 }
 .more > ul {
   display: flex;

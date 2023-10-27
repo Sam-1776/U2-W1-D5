@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300; 1.400;1.500;1.700;1.900 &famiglia= Spettrale:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800 & display=scambia');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+  width: 62%;
+  margin-inline: auto;
+  display: flex;
+}
+
+/* HEADER */
+header {
+  background-color: #ffc017;
+  border-bottom: 1px solid black;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  min-height: 60px;
+  display: flex;
+}
+header >.container > nav > div >ul > li{
+    display: inline-block;
+    padding: .8rem;
+    font-size: 0.9rem;
+}
+header >.container > nav > div >button{
+    background-color: #191919;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    display: inline-block;
+    border: none;
+}
+
+header > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header > .container > nav > div{
+    display: flex;
+    align-items: center;
+}
+
+/* MAIN */
+main {
+  background-color: #ffc017;
+  border-bottom: 1px solid black;
+  width: 100%;
+  display: flex;
+  position: relative;
+  min-height: 460px;
+}
+main > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main > .container >  #svg{
+    position: absolute;
+    width: 500px;
+    right: 0;
+}
+h1{
+    font-family: 'Spectral', serif;
+    font-size: 7rem;
+    font-weight: 500;
+}
+main > .container > #title > h2{
+    font-size: 1.5rem;
+    width: 470px;
+    padding-block: 20px;
+    padding-bottom: 50px;
+}
+#title{
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+}
+
+#title > button{
+    border: none;
+    background-color: #191919;
+    color: white;
+    padding: .6rem 3rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    display: inline-block;
+    align-self: flex-start;
+}
+

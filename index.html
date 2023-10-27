@@ -24,7 +24,7 @@
               <li>Write</li>
               <li>Sign In</li>
             </ul>
-            <button>Get Started</button>
+            <button class="color">Get Started</button>
           </div>
         </nav>
       </div>
@@ -9352,7 +9352,7 @@
                 </p>
               </div>
               <div class="relase">
-                <span>Oct 27 · 5 min read · Aging<img src="./assets/imgs/svg/star.svg" alt=""></span>
+                <span>Oct 27 · 5 min read · <span class="lastW">Aging</span><img src="./assets/imgs/svg/star.svg" alt=""></span>
                 
                <img src="./assets/imgs/svg/bookmark.svg" alt="">
             </div>
@@ -9374,7 +9374,7 @@
                 <p>Can you speak about your trauma if you don't look traumatized?</p>
               </div>
               <div class="relase">
-                <span>Oct 24 · 6 min read · Health <img src="./assets/imgs/svg/star.svg" alt=""></span>
+                <span>Oct 24 · 6 min read · <span class="lastW">Health</span> <img src="./assets/imgs/svg/star.svg" alt=""></span>
                <img src="./assets/imgs/svg/bookmark.svg" alt="">
               </div>
             </div>
@@ -9398,7 +9398,7 @@
                 </p>
               </div>
               <div class="relase">
-                <span>Oct 15 · 5 min read · Software Engineering <img src="./assets/imgs/svg/star.svg" alt=""></span>
+                <span>Oct 15 · 5 min read · <span class="lastW">Software Engineering</span> <img src="./assets/imgs/svg/star.svg" alt=""></span>
                <img src="./assets/imgs/svg/bookmark.svg" alt="">
               </div>
             </div>
@@ -9422,7 +9422,7 @@
                 </p>
               </div>
               <div class="relase">
-                <span>Oct 25 · 11 min read · Sustainability</span>
+                <span>Oct 25 · 11 min read · <span class="lastW">Sustainability</span></span>
             </div>
             </div>
             <div class="img">
@@ -9446,7 +9446,7 @@
                 </p>
               </div>
               <div class="relase">
-                <span>Oct 26 · 7 min read · Health <img src="./assets/imgs/svg/star.svg" alt=""></span>
+                <span>Oct 26 · 7 min read · <span class="lastW">Health</span> <img src="./assets/imgs/svg/star.svg" alt=""></span>
                <img src="./assets/imgs/svg/bookmark.svg" alt="">
               </div>
             </div>
@@ -9470,7 +9470,7 @@
                 </p>
               </div>
               <div class="relase">
-                <span>Jan 18, 2020 · 6 min read · Experiences <img src="./assets/imgs/svg/star.svg" alt=""></span>
+                <span>Jan 18, 2020 · 6 min read · <span class="lastW">Experiences</span> <img src="./assets/imgs/svg/star.svg" alt=""></span>
                <img src="./assets/imgs/svg/bookmark.svg" alt="">
               </div>
             </div>
@@ -9498,7 +9498,7 @@
                 </p>
               </div>
               <div class="relase">
-                <span>Oct 24 · 6 min read · Health</span></div>
+                <span>Oct 24 · 6 min read · <span class="lastW">Health</span></span></div>
             </div>
             <div class="img">
               <img src="./assets/imgs/image20.jpg" alt="" />
@@ -9509,29 +9509,29 @@
           <h5>Discover more of what matters to you</h5>
           <div class="topic">
             <ul>
-              <li>Programming</li>
-              <li>Data Science</li>
-              <li>Technology</li>
-              <li>Self Improvement</li>
-              <li>Writing</li>
-              <li>Relationships</li>
-              <li>Machine Learning</li>
-              <li>Productivity</li>
-              <li>Politics</li>
+              <a href="#"><li>Programming</li></a>
+              <a href="#"><li>Data Science</li>
+              <a href="#"><li>Technology</li></a>
+              <a href="#"><li>Self Improvement</li></a>
+              <a href="#"><li>Writing</li></a>
+              <a href="#"><li>Relationships</li></a>
+              <a href="#"><li>Machine Learning</li></a>
+              <a href="#"><li>Productivity</li></a>
+              <a href="#"><li>Politics</li></a>
             </ul>
             <a href="">See more topics</a>
           </div>
           <div class="more">
             <ul>
-              <li>Help</li>
-              <li>Status</li>
-              <li>Writers</li>
-              <li>Blog</li>
-              <li>Careers</li>
-              <li>Privacy</li>
-              <li>Terms</li>
-              <li>About</li>
-              <li>Knowable</li>
+                <a href="#"><li>Help</li></a>
+                <a href="#"><li>Status</li></a>
+                <a href="#"><li>Writers</li></a>
+                <a href="#"><li>Blog</li></a>
+                <a href="#"><li>Careers</li></a>
+                <a href="#"><li>Privacy</li></a>
+                <a href="#"><li>Terms</li></a>
+                <a href="#"><li>About</li></a>
+                <a href="#"><li>Knowable</li></a>
             </ul>
           </div>
         </div class="footer">
@@ -9540,7 +9540,24 @@
 
 
     <script>
-        
+        const navbar = document.querySelector("header")
+        const button = document.querySelector("button")
+
+        const change = () =>{
+            const trigger = window.scrollY;
+            console.log(trigger)
+
+            if (trigger > 190) {
+                navbar.classList.add("change-color")
+                button.classList.add("change-colorB")
+            } else {
+                navbar.classList.remove("change-color")
+                button.classList.remove("change-colorB")
+            }
+        }
+        window.addEventListener("scroll", change);
+        console.log(navbar) 
+        console.log(button) 
     </script>
   </body>
 </html>

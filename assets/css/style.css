@@ -8,7 +8,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .container {
-  width: 62%;
+  width: 90%;
   margin-inline: auto;
   display: flex;
 }
@@ -32,25 +32,33 @@ header {
   border-bottom: 1px solid black;
   width: 100%;
   font-family: "Roboto", sans-serif;
-  min-height: 60px;
+  min-height: 75px;
   display: flex;
   position: fixed;
   top: 0;
   z-index: 99;
+  transition: background-color 500ms 250ms;
+}
+.change-color{
+    background-color: white;
 }
 header > .container > nav > div > ul > li {
   display: inline-block;
   padding: 0.8rem;
   font-size: 0.9rem;
 }
-header > .container > nav > div > button {
+.color {
   background-color: #191919;
   color: white;
-  padding: 0.5rem 1rem;
+  padding: .5rem 1rem;
   border-radius: 50px;
   font-size: 0.9rem;
   display: inline-block;
   border: none;
+  transition: background-color 500ms 250ms;
+}
+.change-colorB{
+    background-color: #1a8917;
 }
 
 header > .container {
@@ -70,7 +78,8 @@ main {
   width: 100%;
   display: flex;
   position: relative;
-  min-height: 460px;
+  min-height: 470px;
+  margin-top: 75px;
 }
 main > .container {
   display: flex;
@@ -125,7 +134,7 @@ article > .container {
   flex-wrap: wrap;
 }
 .trending {
-  width: 62%;
+  width: 90%;
   margin-inline: auto;
   display: flex;
   align-items: center;
@@ -136,9 +145,10 @@ article > .container {
   font-weight: 600;
 }
 article > .container > .news {
-  width: 350px;
+  width: 33%;
   display: flex;
   align-items: baseline;
+  gap: 0;
 }
 .news > .number {
   color: #f2f2f2;
@@ -187,6 +197,12 @@ span {
   width: 16px;
   height: 16px;
 }
+.lastW{
+    display: inline-block;
+  background-color: #f2f2f2;
+  padding: 0.4rem .9rem;
+  border-radius: 50px;
+}
 
 /* ASIDE */
 
@@ -209,6 +225,7 @@ aside > .container {
 .new {
   display: flex;
   justify-content: space-between;
+  column-gap: 10px;
 }
 .post > .new > .img {
   width: 200px;
@@ -232,6 +249,9 @@ aside > .container {
   display: flex;
   align-items: center;
   column-gap: 5px;
+}
+.people > .profile > img{
+    width: 100%;
 }
 .content {
   display: flex;
@@ -288,7 +308,11 @@ h5 {
   flex-wrap: wrap;
   gap: 10px;
 }
-.topic > ul > li {
+.topic > ul > a {
+    text-decoration: none;
+    color:#191919;
+}
+.topic > ul > a > li {
   display: inline-block;
   background-color: #f2f2f2;
   padding: 0.5rem 1rem;
@@ -309,8 +333,13 @@ h5 {
   flex-wrap: wrap;
   gap: 20px;
 }
-.more > ul > li {
+.more > ul > a{
+    text-decoration: none;
+    color: #191919;
+}
+.more > ul > a >li {
   display: inline-block;
   font-size: 0.9rem;
   font-weight: 500;
 }
+
